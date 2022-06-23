@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useState } from 'react';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { DashboardIcon, OrganizationIcon, UsersIcon } from './icons';
 import SidebarItem from './SidebarItem';
@@ -42,9 +41,8 @@ const Sidebar = () => {
       <SidebarHeader>
         {open ? (
           <div className='icon-background' onClick={() => setOpen(false)}>
-            <Image
+            <img
               src={'/icons/SidebarExpanded.svg'}
-              layout='fixed'
               width={40}
               height={40}
               alt='Toggle'
@@ -54,9 +52,8 @@ const Sidebar = () => {
           <div
             className='center-div icon-background'
             onClick={() => setOpen(true)}>
-            <Image
+            <img
               src={'/icons/SidebarToggle.svg'}
-              layout='fixed'
               width={20}
               height={20}
               alt='Toggle'
@@ -65,12 +62,11 @@ const Sidebar = () => {
         )}
         {open && (
           <div className='main-logo' onClick={() => router.push('/')}>
-            <Image
+            <img
               src={'/images/Platform Suite_Logo_White_LG.png'}
               layout='fixed'
               width={137}
               height={40}
-              priority
               alt='Platform Suite Logo'
             />
           </div>
