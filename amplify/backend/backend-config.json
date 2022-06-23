@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "ownermodule41743cca": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
